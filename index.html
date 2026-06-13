@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <div class="page__shape page__shape--1"></div>
+    <div class="page__shape page__shape--2"></div>
+    <div class="page__shape page__shape--3"></div>
+
+    <main class="login-card">
+      <h1 class="login-card__title">Login</h1>
+
+      <form class="login-form" action="#" method="post">
+        <div class="field">
+          <label class="field__label" for="username">Username</label>
+          <div class="field__input-wrap">
+            <i class="fa-regular fa-user field__icon" aria-hidden="true"></i>
+            <input
+              class="field__input"
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Type your username"
+              autocomplete="username"
+            >
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="password">Password</label>
+          <div class="field__input-wrap">
+            <i class="fa-solid fa-lock field__icon" aria-hidden="true"></i>
+            <input
+              class="field__input"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Type your password"
+              autocomplete="current-password"
+            >
+          </div>
+        </div>
+
+        <a class="login-form__forgot" href="#">Forgot password?</a>
+
+        <button class="login-form__submit" type="submit">LOGIN</button>
+      </form>
+
+      <p class="divider-text">Or Sign Up Using</p>
+
+      <div class="social">
+        <a class="social__btn social__btn--facebook" href="#" aria-label="Sign up with Facebook">
+          <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+        </a>
+        <a class="social__btn social__btn--twitter" href="#" aria-label="Sign up with Twitter">
+          <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a class="social__btn social__btn--google" href="#" aria-label="Sign up with Google">
+          <i class="fa-brands fa-google" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <p class="divider-text">Or Sign Up Using</p>
+      <a class="signup-link" href="#">SIGN UP</a>
+    </main>
+  </div>
+</body>
+</html>
